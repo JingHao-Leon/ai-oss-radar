@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Open Source Radar — 高质量人工智能开源项目导航，覆盖大模型、具身智能、计算机视觉与 AI Agent。" />
+    <meta name="theme-color" content="#07111f" />
+    <title>AI Open Source Radar · 精选 AI 项目导航</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="AI Open Source Radar 首页">
+        <span class="brand-mark">∿</span>
+        <span>AI / OS<br /><b>RADAR</b></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#radar">项目雷达</a>
+        <a href="#guide">如何使用</a>
+        <a href="https://github.com/JingHao-Leon/ai-oss-radar" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow"><span></span> CURATED · UPDATED 2026.07</div>
+        <h1>找到值得投入的<br /><em>AI 开源项目</em></h1>
+        <p>不是又一份链接清单。这里按技术方向、上手路径与适用场景，持续收录真正有生命力的 AI 项目。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#radar">开始探索 <span>↓</span></a>
+          <button class="button button-quiet" id="randomButton">给我一个项目 <span>↗</span></button>
+        </div>
+        <div class="hero-stats" aria-label="网站数据">
+          <div><strong id="projectCount">35</strong><span>精选项目</span></div>
+          <div><strong>06</strong><span>技术方向</span></div>
+          <div><strong>∞</strong><span>持续更新</span></div>
+        </div>
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      </section>
+
+      <section class="radar" id="radar">
+        <div class="section-heading">
+          <div><span class="section-no">01 / PROJECT RADAR</span><h2>项目雷达</h2></div>
+          <p>从研究原型到生产工具，按你当下的探索方向筛选。</p>
+        </div>
+        <div class="controls">
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索项目、关键词或技术栈…" autocomplete="off" /></label>
+          <button class="sort-button" id="sortButton" aria-label="切换排序方式">推荐排序 <span>⇅</span></button>
+        </div>
+        <div class="filters" id="filters" aria-label="项目分类筛选"></div>
+        <div class="result-line"><span id="resultCount"></span><button id="favoriteFilter" aria-pressed="false">☆ 只看收藏</button></div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span>◇</span><h3>没有找到匹配的项目</h3><p>试试更短的关键词，或切换一个技术方向。</p><button id="resetButton">清除筛选</button>
+        </div>
+      </section>
+
+      <section class="guide" id="guide">
+        <div class="section-heading"><div><span class="section-no">02 / FIELD GUIDE</span><h2>怎么用这份导航</h2></div></div>
+        <div class="guide-grid">
+          <article><span>01</span><h3>先定问题</h3><p>从你要解决的任务开始，而不是从最热门的仓库开始。每个项目都标注了适合的起点。</p></article>
+          <article><span>02</span><h3>再看生态</h3><p>代码质量、文档、许可协议和社区活跃度，往往比单次榜单排名更能决定长期价值。</p></article>
+          <article><span>03</span><h3>建立你的栈</h3><p>用收藏构建个人学习清单；每次只选一个项目动手跑通，再逐步延展。</p></article>
+        </div>
+      </section>
+    </main>
+    <footer><div class="brand"><span class="brand-mark">∿</span><span>AI / OS<br /><b>RADAR</b></span></div><p>为中文 AI 开发者整理的开源项目雷达。</p><a href="https://github.com/JingHao-Leon/ai-oss-radar/issues/new" target="_blank" rel="noreferrer">推荐项目 →</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
