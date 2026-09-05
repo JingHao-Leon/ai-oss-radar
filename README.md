@@ -2,7 +2,7 @@
 
 # AI Open Source Radar
 
-**面向中文 AI 开发者的高质量开源项目雷达 —— 35 个精选项目 × 6 大技术方向，可搜索、可收藏、一键直达**
+**面向中文 AI 开发者的高质量开源项目雷达 —— 34 个精选项目 × 6 大技术方向，可搜索、可收藏、一键直达**
 
 [![GitHub Pages](https://img.shields.io/github/deployments/JingHao-Leon/ai-oss-radar/github-pages?label=GitHub%20Pages)](https://jinghao-leon.github.io/ai-oss-radar/)
 [![HTML](https://img.shields.io/badge/主语言-HTML-E34F26?logo=html5&logoColor=white)](https://github.com/JingHao-Leon/ai-oss-radar)
@@ -16,7 +16,13 @@
 
 ---
 
-不是又一份链接清单。AI Open Source Radar 是一个纯静态、零依赖的单页站点：按**技术方向、上手路径与适用场景**持续收录真正有生命力的 AI 开源项目，覆盖**具身智能 / 计算机视觉 / 大模型与 NLP / 多模态 / AI Agent / 开发评估与 LLMOps** 六大方向，每个项目都标注了「为什么值得看」并可直接跳转到其 GitHub 仓库。
+不是又一份链接清单。AI Open Source Radar 是一个纯静态、零依赖的单页站点：按**技术方向、上手路径与适用场景**持续收录真正有生命力的 AI 开源项目，覆盖**具身智能 / 计算机视觉 / 大模型与 NLP / 多模态 / AI Agent / 开发工具** 六大方向，每个项目都标注了「为什么值得看」并可直接跳转到其 GitHub 仓库。
+
+## 📸 站点截图
+
+| 首页 · 按方向探索 | 项目雷达 · 搜索与筛选 | 收藏夹 · 个人学习清单 |
+|:---:|:---:|:---:|
+| ![首页 Hero](docs/screenshots/hero.png) | ![项目雷达网格](docs/screenshots/radar-grid.png) | ![搜索与收藏过滤](docs/screenshots/search-favorites.png) |
 
 ## ✨ 站点亮点
 
@@ -67,7 +73,7 @@
 
 ```mermaid
 flowchart TD
-    A["projects 数据集<br/>（app.js 内置 35 个项目）"] --> B{用户操作}
+    A["projects 数据集<br/>（app.js 内置 34 个项目）"] --> B{用户操作}
     B -->|分类筛选| C["activeCategory"]
     B -->|关键词搜索| D["searchInput"]
     B -->|收藏开关| E["favorites<br/>localStorage 持久化"]
@@ -95,8 +101,9 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 
 ```
 ├── index.html      # 页面骨架：Hero、项目雷达区、使用指南
-├── app.js          # 项目数据集（35 个项目）+ 筛选/搜索/收藏/排序/随机逻辑
+├── app.js          # 项目数据集（34 个项目）+ 筛选/搜索/收藏/排序/随机逻辑
 ├── styles.css      # 全部样式（深色雷达风格）
+├── docs/screenshots/  # README 站点截图
 ├── LICENSE         # MIT
 └── README.md
 ```
@@ -106,7 +113,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 ## 📚 收录项目速览
 
 <details>
-<summary><strong>展开查看全部 35 个收录项目（按方向分组）</strong></summary>
+<summary><strong>展开查看全部 34 个收录项目（按方向分组）</strong></summary>
 
 ### 具身智能
 
@@ -168,7 +175,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 
 ## 📌 收录口径与局限
 
-- 收录为主编精选（当前 35 个），不是全量榜单，也不追求实时反映 star 数变化。
+- 收录为主编精选（当前 34 个），不是全量榜单，也不追求实时反映 star 数变化。
 - 项目简介与「为什么值得看」为编者视角的定性判断，仅供选型参考。
 - 站点不抓 GitHub API，收藏等状态仅存于浏览器本地。
 
