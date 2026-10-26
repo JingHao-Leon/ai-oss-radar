@@ -30,12 +30,14 @@ const projects = [
   {name:'Langfuse',org:'langfuse',cat:'开发工具',tags:['可观测性','评估','LLMOps'],desc:'开源 LLM 工程可观测平台，可追踪调用、提示、成本与评测。',why:'生产观测'},
   {name:'lm-evaluation-harness',org:'EleutherAI',cat:'开发工具',tags:['评测','基准','LLM'],desc:'广泛使用的语言模型评测框架，涵盖大量公开任务与可复现实验。',why:'严谨评估'},
   {name:'Ragas',org:'explodinggradients',cat:'开发工具',tags:['RAG','评估','质量'],desc:'专注 RAG 应用质量评测的框架，用数据驱动检索与生成链路的改进。',why:'RAG 评估'},
+  {name:'agent-qa',org:'vostride',cat:'开发工具',tags:['应用测试','持久记忆','MCP'],desc:'用自然语言测试 Web、Android 和 iOS 应用，结合持久记忆、经验证的自我改进及 CLI/MCP 接口。',why:'记忆与改进'},
   {name:'Datasets',org:'huggingface',cat:'开发工具',tags:['数据集','数据处理','Hub'],desc:'高效加载、处理与共享机器学习数据集的标准库，和 Hub 紧密集成。',why:'数据入口'},
   {name:'PEFT',org:'huggingface',cat:'大模型 / NLP',tags:['微调','LoRA','高效训练'],desc:'参数高效微调方法的统一工具库，让资源有限的模型定制更可行。',why:'微调首选'},
   {name:'Axolotl',org:'axolotl-ai-cloud',cat:'大模型 / NLP',tags:['微调','训练','配置'],desc:'面向 LLM 微调的简洁训练工具，支持常用模型、数据格式和高效训练技术。',why:'训练上手'}
 ];
 const categoryIcons={ '全部':'◌','具身智能':'◉','计算机视觉':'◈','大模型 / NLP':'∿','多模态':'◐','Agent':'✦','开发工具':'⌘' };
 const projectUrls={
+  'agent-qa':'https://github.com/vostride/agent-qa',
   'LeRobot':'https://github.com/huggingface/lerobot','OpenVLA':'https://github.com/openvla/openvla','Isaac Lab':'https://github.com/isaac-sim/IsaacLab','ManiSkill':'https://github.com/haosulab/ManiSkill','Diffusion Policy':'https://github.com/real-stanford/diffusion_policy','OpenPI':'https://github.com/Physical-Intelligence/openpi',
   'Ultralytics':'https://github.com/ultralytics/ultralytics','Segment Anything':'https://github.com/facebookresearch/segment-anything','MMDetection':'https://github.com/open-mmlab/mmdetection','PaddleOCR':'https://github.com/PaddlePaddle/PaddleOCR','Detectron2':'https://github.com/facebookresearch/detectron2','ComfyUI':'https://github.com/Comfy-Org/ComfyUI',
   'Transformers':'https://github.com/huggingface/transformers','vLLM':'https://github.com/vllm-project/vllm','llama.cpp':'https://github.com/ggml-org/llama.cpp','Qwen':'https://github.com/QwenLM/Qwen','OpenAI Cookbook':'https://github.com/openai/openai-cookbook','LLaVA':'https://github.com/haotian-liu/LLaVA','InternVL':'https://github.com/OpenGVLab/InternVL',

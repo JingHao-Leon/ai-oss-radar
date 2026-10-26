@@ -2,7 +2,7 @@
 
 # AI Open Source Radar
 
-**面向中文 AI 开发者的高质量开源项目雷达 —— 34 个精选项目 × 6 大技术方向，可搜索、可收藏、一键直达**
+**面向中文 AI 开发者的高质量开源项目雷达 —— 35 个精选项目 × 6 大技术方向，可搜索、可收藏、一键直达**
 
 [![GitHub Pages](https://img.shields.io/github/deployments/JingHao-Leon/ai-oss-radar/github-pages?label=GitHub%20Pages)](https://jinghao-leon.github.io/ai-oss-radar/)
 [![HTML](https://img.shields.io/badge/主语言-HTML-E34F26?logo=html5&logoColor=white)](https://github.com/JingHao-Leon/ai-oss-radar)
@@ -73,7 +73,7 @@
 
 ```mermaid
 flowchart TD
-    A["projects 数据集<br/>（app.js 内置 34 个项目）"] --> B{用户操作}
+    A["projects 数据集<br/>（app.js 内置 35 个项目）"] --> B{用户操作}
     B -->|分类筛选| C["activeCategory"]
     B -->|关键词搜索| D["searchInput"]
     B -->|收藏开关| E["favorites<br/>localStorage 持久化"]
@@ -101,7 +101,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 
 ```
 ├── index.html      # 页面骨架：Hero、项目雷达区、使用指南
-├── app.js          # 项目数据集（34 个项目）+ 筛选/搜索/收藏/排序/随机逻辑
+├── app.js          # 项目数据集（35 个项目）+ 筛选/搜索/收藏/排序/随机逻辑
 ├── styles.css      # 全部样式（深色雷达风格）
 ├── docs/screenshots/  # README 站点截图
 ├── LICENSE         # MIT
@@ -113,7 +113,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 ## 📚 收录项目速览
 
 <details>
-<summary><strong>展开查看全部 34 个收录项目（按方向分组）</strong></summary>
+<summary><strong>展开查看全部 35 个收录项目（按方向分组）</strong></summary>
 
 ### 具身智能
 
@@ -165,6 +165,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 - [Langfuse](https://github.com/langfuse/langfuse) — LLM 可观测性和评估平台。
 - [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — 语言模型评测框架。
 - [Ragas](https://github.com/explodinggradients/ragas) — RAG 应用质量评测。
+- [agent-qa](https://github.com/vostride/agent-qa) — 用自然语言测试 Web、Android 和 iOS 应用，结合持久记忆、经验证的自我改进及 CLI/MCP 接口。[官网](https://vostride.com)。
 - [Datasets](https://github.com/huggingface/datasets) — 高效处理与共享机器学习数据集。
 
 </details>
@@ -175,7 +176,7 @@ python3 -m http.server 8000   # 访问 http://localhost:8000
 
 ## 📌 收录口径与局限
 
-- 收录为主编精选（当前 34 个），不是全量榜单，也不追求实时反映 star 数变化。
+- 收录为主编精选（当前 35 个），不是全量榜单，也不追求实时反映 star 数变化。
 - 项目简介与「为什么值得看」为编者视角的定性判断，仅供选型参考。
 - 站点不抓 GitHub API，收藏等状态仅存于浏览器本地。
 
